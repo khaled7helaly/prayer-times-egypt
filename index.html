@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواقيت الصلاة</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+       <!-- Header -->
+<header class="location-card">
+
+    <!-- Location Information -->
+        <div class="location-info">
+
+            <div class="section-label">
+                <span class="status-dot"></span>
+                مواقيت الصلاة في مصر
+            </div>
+
+            <h1>
+                <span class="material-symbols-rounded location-icon">
+                    location_on
+                </span>
+                القاهرة، مصر
+            </h1>
+
+            <p class="date">الجمعة، 16 أكتوبر 2026</p>
+
+            <p class="header-subtitle">
+                اعرف مواقيت الصلاة في محافظتك بكل سهولة
+            </p>
+
+        </div>
+
+        <!-- Governorate Selector -->
+        <section class="city-selector">
+
+            <label for="governorate">تغيير المحافظة</label>
+
+            <div class="select-wrapper">
+
+                <select id="governorate">
+
+                    <option value="" selected disabled>
+                        اختار المحافظة...
+                    </option>
+
+              <option value="cairo">القاهرة</option>
+                    <option value="giza">الجيزة</option>
+                    <option value="alexandria">الإسكندرية</option>
+                    <option value="al-mansurah">الدقهلية</option>
+                    <option value="hurghada">البحر الأحمر</option>
+                    <option value="damanhur">البحيرة</option>
+                    <option value="al-fayyum">الفيوم</option>
+                    <option value="tanta">الغربية</option>
+                    <option value="ismailia">الإسماعيلية</option>
+                    <option value="shibin-al-kawm">المنوفية</option>
+                    <option value="minya">المنيا</option>
+                    <option value="banha">القليوبية</option>
+                    <option value="al-kharjah">الوادي الجديد</option>
+                    <option value="suez">السويس</option>
+                    <option value="aswan">أسوان</option>
+                    <option value="assiut">أسيوط</option>
+                    <option value="bani-suwayf">بني سويف</option>
+                    <option value="port-said">بورسعيد</option>
+                    <option value="damietta">دمياط</option>
+                    <option value="zagazig">الشرقية</option>
+                    <option value="el-tor">جنوب سيناء</option>
+                    <option value="kafr-ash-shaykh">كفر الشيخ</option>
+                    <option value="marsa-matruh">مطروح</option>
+                    <option value="luxor">الأقصر</option>
+                    <option value="qina">قنا</option>
+                    <option value="arish">شمال سيناء</option>
+                    <option value="sohag">سوهاج</option>
+                    </select>
+
+                <span class="material-symbols-rounded arrow-icon">
+                    keyboard_arrow_down
+                </span>
+
+            </div>
+
+        </section>
+
+    </header>
+
+        <!-- Prayer Times -->
+        <section class="prayer-grid">
+
+            <article class="prayer-card fajr">
+                <div class="icon-wrapper">
+                    <span class="material-symbols-rounded">nightlight</span>
+                </div>
+                <h2>الفجر</h2>
+                <p class="prayer-time">04:35 </p>
+            </article>
+
+            <article class="prayer-card sunrise">
+                <div class="icon-wrapper">
+                    <span class="material-symbols-rounded">wb_twilight</span>
+                </div>
+                <h2>الشروق</h2>
+                <p class="prayer-time">05:58 </p>
+            </article>
+
+            <article class="prayer-card dhuhr">
+                <div class="icon-wrapper">
+                    <span class="material-symbols-rounded">light_mode</span>
+                </div>
+                <h2>الظهر</h2>
+                <p class="prayer-time">11:42 </p>
+            </article>
+
+            <article class="prayer-card asr">
+                <div class="icon-wrapper">
+                    <span class="material-symbols-rounded">sunny</span>
+                </div>
+                <h2>العصر</h2>
+                <p class="prayer-time">03:05 </p>
+            </article>
+
+            <article class="prayer-card maghrib">
+                <div class="icon-wrapper">
+                    <span class="material-symbols-rounded">wb_twilight</span>
+                </div>
+                <h2>المغرب</h2>
+                <p class="prayer-time">05:27 </p>
+            </article>
+
+            <article class="prayer-card isha">
+                <div class="icon-wrapper">
+                    <span class="material-symbols-rounded">dark_mode</span>
+                </div>
+                <h2>العشاء</h2>
+                <p class="prayer-time">06:45 </p>
+            </article>
+
+        </section>
+
+    </main>
+     
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="script.js" ></script>
+
+</body>
+</html>
