@@ -24,8 +24,8 @@ function formatArabicDate(dateString) {
     
     //Regular Function.
 
-   governorateSelect.addEventListener("change" , function(){
-        const city = this.value;
+     function getPrayerTimes (city){
+        // const city = this.value;
     
    const url = `https://waqtazan.com/api/v1/timings/egypt/${city}`;
 
@@ -58,7 +58,20 @@ function formatArabicDate(dateString) {
                 });
 
 
-  })
+  }
+
+
+
+            governorateSelect.addEventListener("change", function () {
+                getPrayerTimes(this.value);
+            });
+
+            // Run automatically when the page opens
+            if (!governorateSelect.value) {
+                governorateSelect.value = "cairo";
+            }
+
+            getPrayerTimes(governorateSelect.value);
 
 
 
@@ -68,11 +81,3 @@ function formatArabicDate(dateString) {
 
 
 
-
-
-
-
-
-
-
-// let data =
